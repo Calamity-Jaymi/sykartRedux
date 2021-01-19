@@ -1,0 +1,59 @@
+body {
+  background-color: #C70C12;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 370px) {
+  .sykart-intro {
+    padding: 0 1%;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .allkarts{
+    width: 100%;
+  }
+}
+
+.sykart-brand {
+  font-family: 'Racing Sans One', sans-serif;
+}
+
+.sykart-intro {
+  margin-top: 8%;
+  margin-bottom: 2%;
+  font-size: 20px;
+  line-height: 2em;
+  letter-spacing: .05em;
+}
+
+.racetoday  {
+  padding: 7% 3%;
+  font-size: 5rem;
+  font-family: 'Racing Sans One', cursive;
+}
+
+.sykart-intro-item, .all-karts {
+  border-radius: 100%;
+  width: 80%;
+
+
+}
+
+.moving-kart {;
+  background: transparent;
+  position: relative;
+  animation: mymove 7s infinite;
+}
+
+@keyframes mymove {
+  from {left: -55%;}
+  to {left: 103%;}
+}
+
+.pricing-info {
+  margin-top: 2%;
+  padding: 5%;
+  text-align: justify;
+}

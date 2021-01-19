@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS, Fonts, and Custom Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/customstyles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+
+    <title>Sykart Indoor Racing</title>
   </head>
   <body>
+    <!--Navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="container-fluid">
+          <a class="navbar-brand sykart-brand" href="#">Sykart Indoor Racing</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Party!</a>
+              </li>
+            </ul><!--navbar-nav-->
+          </div><!--navbar-collapse-->
+        </nav> <!--container-fluid-->
+      </nav> <!--navbar1-->
+    <!--Navbar dismissible alert-->
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> Sykart is NOT currently taking walk-in customers under Governor's orders.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <!--Quick Description div and Photo-->
+      <div class="container-fluid bg-dark sykart-intro text-light">
+        <div class="row">
+          <div class="col-md-5 col-sm-12 sykart-intro-item my-5">
+            <img class="all-karts" src="images/all-karts.jpg" alt="All Sizes of Go-Karts">
+          </div>
+            <div class="col-md-7 col-sm-12 sykart-intro-item">
+              <h1 class="racetoday">Race Today!</h1>
+              <p>
+                Family Racing<br>
+                VIP Memberships<br>
+                Endurance Racing<br>
+                Basic Driving School<br>
+                Race for bragging rights<br>
+              </p>
+              <br>
+              <a class="btn btn-lg btn-outline-success mb-4" href="https://sykart-tukwila.briqbookings.com/" role="button">Sign Up!</a>
+            </div>
+          </div> <!-- col-md-6 -->
+        </div>
+      </div>
 
+      <div class="moving-kart">
+        <img src="images/go-kart-go.png" alt="go kart moving across screen">
+      </div>
+
+      <div class="container-fluid bg-dark text-light pricing-info">
+        <div class="row">
+          <div class="col-md-3 my-4">
+            <div class="card bg-dark border-secondary">
+              <h2 class="card-header bg-danger">Arrive and Drive</h2>
+                <div class="pr-5 pl-2">
+                  <p>
+                    <h6 class="text-secondary">10 Minute Race</h6><br>
+                    <ul>
+                      <li>Must be 16 years old with valid photo ID</li>
+                      <li>Must schedule ahead of arrival</li>
+                      <em>Member Prices:</em><br>
+                      <li>$10 each race (Mon – Fri)</li>
+                      <em>Non-Member:</em><br>
+                      <li>1 Race: $17</li>
+                      <li>2 Races: $30</li>
+                    </ul>
+                    <hr>
+                    Want MORE? Only $10 per each additional race.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-4">
+            <div class="card bg-dark border-secondary">
+              <h2 class="card-header bg-danger">Endurance Racing</h2>
+                <div class="pr-5 pl-2">
+                    <p>
+                      <h6 class="text-secondary">30 Minute Non-stop Race</h6><br>
+                        <ul>
+                          <li>Wednesday nights at 8:00pm</li>
+                          <li>Call ahead to sign up</li>
+                          <em>Member Prices:</em><br>
+                          <li>$30 race</li>
+                          <em>Non-Member:</em><br>
+                          <li>$35 race</li>
+                        </ul>
+                      <hr>
+                      Space is limited.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-4">
+            <div class="card bg-dark border-secondary">
+              <h2 class="card-header bg-danger">VIP Memberships</h2>
+                <div class="pr-5 pl-2">
+                  <p>
+                    <h6 class="text-secondary">Renew Annually</h6><br>
+                    <ul>
+                      <li>$35 One Time Cost<br></li>
+                      <li>$10 Yearly Renewal<Br></li>
+                      <li>One Free Race Session</li>
+                      <li>One Free Hygienic Helmet Liner</li>
+                      <li>One Free B-day Race</li>
+                      <li>Discounted Racing, $10 (Mon-Fri)</li>
+                    </ul>
+                    <hr>
+                    Must provide a valid drivers license or drivers permit, in order to purchase a VIP membership.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-4">
+            <div class="card bg-dark border-secondary">
+              <h2 class="card-header bg-danger">Basic Driving School</h2>
+                <div class="pr-5 pl-2">
+                  <p>
+                    <ul>
+                      <li>Ages 8+</li>
+                      <li>$50 per student</li>
+                      <li>15 minute instruction on driver safety and expectations, track rules, and basic kart control</li>
+                      <li>Two 10 minute follow-the-leader sessions</li>
+                      <li>One 10 minute lapping session to demonstrate their ability to drive safely on their own</li>
+                    </ul>
+                    <hr>
+                    Upon completion of the class, all students will be made full Sykart members!  This includes an official Sykart VIP Membership Card
+                  </p>
+              </div> <!-- price-options -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
