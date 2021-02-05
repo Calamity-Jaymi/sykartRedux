@@ -1,59 +1,196 @@
-body {
-  background-color: #C70C12;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-}
-
-@media screen and (max-width: 370px) {
+@media only screen and (max-width: 762px) {
   .sykart-intro {
-    padding: 0 1%;
+    padding: 0;
     margin: 0;
     font-size: 1rem;
   }
 
-  .allkarts{
+  .sykart-intro-item {
     width: 100%;
+    padding: 0 35px 0 35px;
+    margin-bottom: 0;
+    letter-spacing: normal;
+    font-size: 20px;
   }
+
+  .racetoday {
+    padding-top: 0;
+    font-size: 1em;
+  }
+}
+
+body {
+  background-color: #841818;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 
 .sykart-brand {
   font-family: 'Racing Sans One', sans-serif;
+  font-size: 1.75em;
 }
 
 .sykart-intro {
   margin-top: 8%;
-  margin-bottom: 2%;
-  font-size: 20px;
+  margin-bottom: 4%;
+  font-size: 1.5em;
   line-height: 2em;
   letter-spacing: .05em;
 }
 
+.darkBox {
+  background-color: #000;
+  margin-bottom: 8%;
+}
+
 .racetoday  {
-  padding: 7% 3%;
-  font-size: 5rem;
+  padding-top: 6%;
+  font-size: 4rem;
   font-family: 'Racing Sans One', cursive;
 }
 
-.sykart-intro-item, .all-karts {
-  border-radius: 100%;
-  width: 80%;
-
-
+.transparentStripes {
+  background: url(/images/Stripes-White.png) repeat-x;
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.moving-kart {;
-  background: transparent;
+.transparentStripes1 {
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: auto;
+  display: block;
   position: relative;
-  animation: mymove 7s infinite;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+
+.sykart-intro-item, .all-karts {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.moving-kart {
+  background: transparent;
+  position: fixed;
+  animation: mymove 8s infinite;
 }
 
 @keyframes mymove {
-  from {left: -55%;}
-  to {left: 103%;}
+  from {left: 0%;}
+  to {left: 100%;}
 }
 
 .pricing-info {
   margin-top: 2%;
   padding: 5%;
   text-align: justify;
+}
+
+.pricingTable{
+    padding: 30px 0;
+    text-align: center;
+    background: #13973c;
+    color: #fdfffd;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    box-sizing: content-box;
+    opacity: 0;
+    padding: 7px;
+    z-index: -1;
+    transform: translateY(7px) scale(0.8);
+    box-shadow: 0 0 0 2px #fafafa;
+    transition: all 0.2s ease 0s;
+}
+.pricingTable:hover:before{
+    opacity: 1;
+    transform: scale(1);
+}
+.pricingTable .price-Value{
+    font-size: 50px;
+    font-weight: 900;
+}
+.pricingTable .currency{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 5px;
+
+}
+.pricingTable .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 7px 0;
+}
+.pricingTable .pricing-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.pricingTable .pricing-content ul li{
+    font-size: 15px;
+    line-height: 25px;
+}
+.pricingTable .pricingTable-signup a{
+    display: inline-block;
+    font-size: 20px;
+    color: #fdfffd;
+    padding-bottom: 7px;
+    z-index: 1;
+    border-bottom: 1px solid #fdfffd;
+    text-transform: uppercase;
+}
+.pricingTable.table2{
+    background: #e0bb20;
+
+}
+.pricingTable.table2:before{
+    box-shadow: 0 0 0 2px #fafafa;
+}
+.pricingTable.table3{
+    background: #8c0909;
+}
+.pricingTable.table3:before{
+    box-shadow: 0 0 0 2px #fafafa;
+}
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+    .pricingTable,
+    .pricingTable:before{ border-radius: 0; }
+}
+
+.faqHeader {
+  background: white;
+  color: black;
+  border: 10px solid #000;
 }

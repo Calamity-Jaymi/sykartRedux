@@ -1,164 +1,286 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS, Fonts, and Custom Styles -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/customstyles.css" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS, Fonts, and Custom Styles -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/customstyles.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 
 
-    <title>Sykart Indoor Racing</title>
-  </head>
-  <body>
-    <!--Navigation bar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <nav class="container-fluid">
-          <a class="navbar-brand sykart-brand" href="#">Sykart Indoor Racing</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Reservation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Hours</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Party!</a>
-              </li>
-            </ul><!--navbar-nav-->
-          </div><!--navbar-collapse-->
-        </nav> <!--container-fluid-->
-      </nav> <!--navbar1-->
-    <!--Navbar dismissible alert-->
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> Sykart is NOT currently taking walk-in customers under Governor's orders.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  <title>Sykart Indoor Racing</title>
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark darkBox">
+    <nav class="container-fluid">
+      <a class="navbar-brand sykart-brand" href="#">Sykart Indoor Racing</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Party!</a>
+          </li>
+        </ul>
       </div>
-    <!--Quick Description div and Photo-->
-      <div class="container-fluid bg-dark sykart-intro text-light">
+    </nav>
+  </nav>
+
+  <!--Navbar dismissible alert
+  <div class="alert alert-warning alert-dismissible fade show mt-0" role="alert">
+    <strong>Holy guacamole!</strong> Sykart is NOT currently taking walk-in customers under Governor's orders.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>-->
+
+  <!--Quick Description div and Photo-->
+  <div class="container-fluid darkBox sykart-intro text-light">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 sykart-intro-item my-5">
+        <img class="all-karts" src="images/all-karts.jpg" alt="All Sizes of Go-Karts">
+      </div>
+      <div class="col-md-7 col-sm-12 sykart-intro-item">
+        <h1 class="racetoday">Race Today!</h1>
+        <p>
+          Family Racing<br>
+          VIP Memberships<br>
+          Endurance Racing<br>
+          Basic Driving School<br>
+          Race for bragging rights<br>
+        </p>
+        <br>
+        <a class="btn btn-lg btn-success mb-5" href="#" role="button" data-toggle="modal" data-target="#raceSykart" style="position: relative; z-index: 60">Sign Up!</a>
+      </div>
+      <div class="col-sm-12">
         <div class="row">
-          <div class="col-md-5 col-sm-12 sykart-intro-item my-5">
-            <img class="all-karts" src="images/all-karts.jpg" alt="All Sizes of Go-Karts">
+          <div class="col-12 transparentStripes">
+            <img class="transparentStripes1" src="images/Stripes-White.png" />
           </div>
-            <div class="col-md-7 col-sm-12 sykart-intro-item">
-              <h1 class="racetoday">Race Today!</h1>
-              <p>
-                Family Racing<br>
-                VIP Memberships<br>
-                Endurance Racing<br>
-                Basic Driving School<br>
-                Race for bragging rights<br>
-              </p>
-              <br>
-              <a class="btn btn-lg btn-outline-success mb-4" href="https://sykart-tukwila.briqbookings.com/" role="button">Sign Up!</a>
-            </div>
-          </div> <!-- col-md-6 -->
         </div>
       </div>
-
-      <div class="moving-kart">
-        <img src="images/go-kart-go.png" alt="go kart moving across screen">
-      </div>
-
-      <div class="container-fluid bg-dark text-light pricing-info">
-        <div class="row">
-          <div class="col-md-3 my-4">
-            <div class="card bg-dark border-secondary">
-              <h2 class="card-header bg-danger">Arrive and Drive</h2>
-                <div class="pr-5 pl-2">
-                  <p>
-                    <h6 class="text-secondary">10 Minute Race</h6><br>
-                    <ul>
-                      <li>Must be 16 years old with valid photo ID</li>
-                      <li>Must schedule ahead of arrival</li>
-                      <em>Member Prices:</em><br>
-                      <li>$10 each race (Mon – Fri)</li>
-                      <em>Non-Member:</em><br>
-                      <li>1 Race: $17</li>
-                      <li>2 Races: $30</li>
-                    </ul>
-                    <hr>
-                    Want MORE? Only $10 per each additional race.
-                  </p>
-                </div>
+      <!-- Race Modal -->
+      <div id="raceSykart" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-warning">
+              <h3 class="modal-title">So you wanna go fast?</h3>
+              <button class="btn-secondary" type="button" data-dismiss="modal">Close</button>
             </div>
-          </div>
-          <div class="col-md-3 my-4">
-            <div class="card bg-dark border-secondary">
-              <h2 class="card-header bg-danger">Endurance Racing</h2>
-                <div class="pr-5 pl-2">
-                    <p>
-                      <h6 class="text-secondary">30 Minute Non-stop Race</h6><br>
-                        <ul>
-                          <li>Wednesday nights at 8:00pm</li>
-                          <li>Call ahead to sign up</li>
-                          <em>Member Prices:</em><br>
-                          <li>$30 race</li>
-                          <em>Non-Member:</em><br>
-                          <li>$35 race</li>
-                        </ul>
-                      <hr>
-                      Space is limited.
-                    </p>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-3 my-4">
-            <div class="card bg-dark border-secondary">
-              <h2 class="card-header bg-danger">VIP Memberships</h2>
-                <div class="pr-5 pl-2">
-                  <p>
-                    <h6 class="text-secondary">Renew Annually</h6><br>
-                    <ul>
-                      <li>$35 One Time Cost<br></li>
-                      <li>$10 Yearly Renewal<Br></li>
-                      <li>One Free Race Session</li>
-                      <li>One Free Hygienic Helmet Liner</li>
-                      <li>One Free B-day Race</li>
-                      <li>Discounted Racing, $10 (Mon-Fri)</li>
-                    </ul>
-                    <hr>
-                    Must provide a valid drivers license or drivers permit, in order to purchase a VIP membership.
-                  </p>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-3 my-4">
-            <div class="card bg-dark border-secondary">
-              <h2 class="card-header bg-danger">Basic Driving School</h2>
-                <div class="pr-5 pl-2">
-                  <p>
-                    <ul>
-                      <li>Ages 8+</li>
-                      <li>$50 per student</li>
-                      <li>15 minute instruction on driver safety and expectations, track rules, and basic kart control</li>
-                      <li>Two 10 minute follow-the-leader sessions</li>
-                      <li>One 10 minute lapping session to demonstrate their ability to drive safely on their own</li>
-                    </ul>
-                    <hr>
-                    Upon completion of the class, all students will be made full Sykart members!  This includes an official Sykart VIP Membership Card
-                  </p>
-              </div> <!-- price-options -->
+            <div class="modal-body">
+              <div class="container-fluid text-dark">
+                This is going to be some sort terms and conditions for racing. <br>
+                Something about how you have to wear closed toe shoes <br>
+                Probably something about wait times<br>
+                <a class="btn btn-success" role="button" href="https://sykart-tukwila.briqbookings.com/" target="_blank">I Understand</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+
+  <div class="container-fluid darkBox pricing-info">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="pricingTable">
+          <div class="price-Value">
+            <span class="currency mb-0">$</span>22.00
+          </div>
+          <div class="pricing-content">
+            <h3 class="title">Arrive & Drive</h3>
+            <ul>
+              <li>Monday - Friday</li>
+              <li>2 races for $40 <em>everyday</em></li>
+              <li>10 Minute Race</li>
+              <li>$27 on Weekends</li>
+              <li>Includes Required Helmet Liner</li>
+              <li>$15 Weekday Member Price</li>
+            </ul>
+          </div>
+          <div class="pricingTable-signup">
+            <a href="#">SCHEDULE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="pricingTable table2">
+          <div class="price-Value">
+            <span class="currency">$</span>45.00
+          </div>
+          <div class="pricing-content">
+            <h3 class="title">Endurance Race</h3>
+            <ul>
+              <li>30 Minutes Non-Stop</li>
+              <li>Wed 7:30pm Sign-Up</li>
+              <li>Race Starts at 8pm</li>
+              <li>Space is Limited</li>
+              <li>$35 Member Price</li>
+            </ul>
+          </div>
+          <div class="pricingTable-signup">
+            <a href="#">SCHEDULE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="pricingTable table2">
+          <div class="price-Value">
+            <span class="currency">$</span>50.00
+          </div>
+          <div class="pricing-content">
+            <h3 class="title">Drive School</h3>
+            <ul>
+              <li>Ages 8 and Up</li>
+              <li>Req. for Kids to Drive at Full Speed</li>
+              <li>2 Follow the Leader Races</li>
+              <li>& a 10 Min. Final Test Heat</li>
+              <li>VIP Membership Upon Completion</li>
+              <li>Limited Space</li>
+            </ul>
+          </div>
+          <div class="pricingTable-signup">
+            <a href="#">SCHEDULE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="pricingTable table3">
+          <div class="price-Value">
+            <span class="currency">$</span>35.00
+          </div>
+          <div class="pricing-content">
+            <h3 class="title">VIP Membership</h3>
+            <ul>
+              <li>$10 Annual Renewal</li>
+              <li>Free Birthday Race</li>
+              <li>1 Free Race and Helmet Liner</li>
+              <li>Discounted Main Track (Mon-Fri)</li>
+              <li>Discounted Bulk Race Packages</li>
+            </ul>
+          </div>
+          <div class="pricingTable-signup">
+            <a href="#">SCHEDULE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid darkBox">
+    <div class="row">
+      <div class="col-12 display-3 text-white pt-4">
+        Know Before You Go
+        <hr style="border-top: 5px dotted #fff; width: 40%;" />
+      </div>
+      <div class="col my-4">
+        <!-- place holder carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/family-racing.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/family-racing.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/family-racing.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-4 my-3">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header faqHeader" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="mr-2"><i class="fa fa-flag-checkered"></i></span>
+                  What are the karts like?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+              <img class="card-img-top faqKart" src="images/karts-1.jpg">
+              <div class="card-body">
+                We use European gas ran karts by SodiKart, world renowned for their durable indoor rental karts.
+                They’ve been a staple of the NW Indoor Karting scene for nearly a decade. Our Tukwila track features GT5 6.5hp karts, and GT3 9hp karts.
+                All of our karts are capable of up to 40mph on track. That means no matter the configuration of track, there will be plenty of
+                acceleration and g forces as you power your way through corners and rocket down the straightaways!
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header faqHeader" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="fa-stack mr-2"><i class="fa fa-id-card" aria-hidden="true"></i></span>
+                  Is a driver's license required to race?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Overall, yes. You need a valid driver’s license, permit, or be 16 years old and bring in a government issued ID to race.
+                However, kids as young as 12 may race in a Junior (speed controlled) race, whenever there are no other races running, or about once an hour.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header faqHeader" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span class="mr-2"><i class="fa fa-clock-o"></i></span>
+                  How long is a race?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Regular speed races are 10 minutes, or about 15-20 laps. Junior races are 7 minutes. We also often have endurance race events which are 30 minutes nonstop.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
