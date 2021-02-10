@@ -17,6 +17,10 @@
     padding-top: 0;
     font-size: 1em;
   }
+
+  #faqHeader {
+    font-size: 3rem;
+  }
 }
 
 body {
@@ -187,10 +191,4 @@ body {
     .pricingTable{ margin-bottom: 30px; }
     .pricingTable,
     .pricingTable:before{ border-radius: 0; }
-}
-
-.faqHeader {
-  background: white;
-  color: black;
-  border: 10px solid #000;
 }
