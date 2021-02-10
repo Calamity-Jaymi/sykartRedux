@@ -5,5 +5,5 @@ $(function() {
         pause: "hover"
     });
 
-    
+
 });
