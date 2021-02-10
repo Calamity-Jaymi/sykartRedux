@@ -15,7 +15,7 @@
 
   .racetoday {
     padding-top: 0;
-    font-size: 1em;
+    font-size: 3rem;
   }
 
   #faqHeader {
@@ -49,15 +49,14 @@ body {
 
 .racetoday  {
   padding-top: 6%;
-  font-size: 4rem;
+  /*font-size: 4rem;*/
   font-family: 'Racing Sans One', cursive;
+  text-shadow: 0px 1px 4px #fff;
 }
 
 .transparentStripes {
   background: url(/images/Stripes-White.png) repeat-x;
   background-color: rgba(0, 0, 0, 0);
-  background-position-x: 0px;
-  background-position-y: 0px;
   background-repeat: repeat-x;
   background-size: auto;
   background-origin: padding-box;
@@ -71,8 +70,6 @@ body {
 }
 
 .transparentStripes1 {
-  background-position-x: 0px;
-  background-position-y: 0px;
   background-repeat: repeat-x;
   background-size: auto;
   background-origin: padding-box;
@@ -191,4 +188,14 @@ body {
     .pricingTable{ margin-bottom: 30px; }
     .pricingTable,
     .pricingTable:before{ border-radius: 0; }
+}
+
+#faqHeader {
+  font-family: 'Racing Sans One', sans-serif;
+  text-shadow: 0px 1px 4px #fff;
+}
+
+.faqAccordion {
+  border: 3px dashed #fff;
+  padding: 7px;
 }
