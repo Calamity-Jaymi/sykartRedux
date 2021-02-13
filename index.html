@@ -46,14 +46,6 @@
     </nav>
   </nav>
 
-<!--Navbar dismissible alert-->
-  <div class="alert alert-warning alert-dismissible fade show mt-0" role="alert">
-    <strong>Holy guacamole!</strong> Sykart is NOT currently taking walk-in customers under Governor's orders.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
   <!--Quick Description div and Photo-->
   <div class="container-fluid darkBox sykart-intro text-light">
     <div class="row">
@@ -61,13 +53,14 @@
         <img class="all-karts" src="images/entry.png" alt="All Sizes of Go-Karts">
       </div>
       <div class="col-lg-6 col-md-7 col-sm-12 sykart-intro-item">
-        <h1 class="racetoday">Race Today!</h1>
+        <h1 class="racetoday">Race with us Today!</h1>
         <p>
           Family Racing<br>
           VIP Memberships<br>
           Endurance Racing<br>
           Basic Driving School<br>
           Race for bragging rights<br>
+          Reservations are recommended<br>
         </p>
         <br>
         <a class="btn btn-lg btn-success mb-5" href="#" role="button" data-toggle="modal" data-target="#raceSykart" style="position: relative;">Sign Up!</a>
@@ -81,18 +74,24 @@
       </div>
       <!-- Race Modal -->
       <div id="raceSykart" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header bg-warning">
-              <h3 class="modal-title">So you wanna go fast?</h3>
-              <button class="btn-secondary" type="button" data-dismiss="modal">Close</button>
+              <h3 class="modal-title text-dark">So you wanna go fast?</h3>
+              <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
             </div>
             <div class="modal-body">
               <div class="container-fluid text-dark">
-                This is going to be some sort terms and conditions for racing. <br>
-                Something about how you have to wear closed toe shoes <br>
-                Probably something about wait times<br>
+                <ul class="text-left">
+                  <li>Reckless driving is <strong>prohibited</strong>. This is not bumper cars.<br></li>  
+                  <li>Drivers are <strong>required</strong> to wear a helmet liner and helmet.<br></li>  
+                  <li>If you appear intoxicated, you <strong>cannot race</strong>.<br></li>  
+                  <li>The <em>brake</em> is controlled by the <em>left</em> foot, unlike a car.<br></li>  
+                  <li>Drivers must comply with all <strong>Signals and Instructions</strong> from Sykart Staff.<br></li>  
+                  <li>As always, <em>please</em> ask if you have any questions or would like tips for the track.<br></li>  
+                </ul>
                 <a class="btn btn-success" role="button" href="https://sykart-tukwila.briqbookings.com/" target="_blank">I Understand</a>
+
               </div>
             </div>
           </div>
@@ -198,8 +197,8 @@
       <div class="col-12 display-3 text-white pt-4" id="faqHeader">
         <p>Know Before You Go</p>
       </div>
-      <div class="col-lg-8 col-12 my-4">
-        <div id="sykartCarousel" class="d-block carousel carousel-fade slide">
+      <div class="col-lg-8 col-12 pt-2 my-5">
+        <div id="sykartCarousel" class="d-block ml-2 my-3 carousel carousel-fade slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-inline w-100" src="images/gt9karts.png" alt="First slide">
@@ -227,10 +226,10 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-4 col-12 my-3">
+      <div class="col-lg-4 col-12 pb-4 my-3">
         <div id="accordion" class="faqAccordion mt-3">
           <div class="card">
-            <div class="card-header" id="headingOne">
+            <div class="card-header faqHeadStyle" id="headingOne">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <span class="pr-3"><img src="images/png/016-karting.png" /></span>
@@ -248,7 +247,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header faqHeadStyle" id="headingTwo">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <span class="mr-2 pr-1"><img src="images/png/017-driver-license.png" /></span>
@@ -264,7 +263,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header faqHeadStyle" id="headingThree">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <span class="mr-2"><img src="images/png/013-stopwatch-1.png" /></span>
@@ -279,7 +278,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingFour">
+            <div class="card-header faqHeadStyle" id="headingFour">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   <span class="pr-2"><img src="images/png/004-booking.png" /></span>
@@ -294,7 +293,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingFive">
+            <div class="card-header faqHeadStyle" id="headingFive">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   <span class="pr-2"><img src="images/png/012-helmet.png" /></span>
@@ -309,7 +308,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingSix">
+            <div class="card-header faqHeadStyle" id="headingSix">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                   <span class="pr-2"><img src="images/png/018-clothes.png" /></span>
@@ -324,7 +323,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingSeven">
+            <div class="card-header faqHeadStyle" id="headingSeven">
               <h5 class="mb-0">
                 <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                   <span class="pr-2"><img src="images/png/019-party.png" /></span>
@@ -340,9 +339,9 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingEight">
+            <div class="card-header faqHeadStyle" id="headingEight">
               <h5 class="mb-0">
-                <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseEight">
+                <button class="btn btn-link text-decoration-none text-reset d-flex align-items-start collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                   <span class="pr-2"><img src="images/png/020-height.png" /></span>
                   How tall do you have to be to race?
                 </button>
@@ -360,6 +359,54 @@
         <div class="row">
           <div class="col-12 transparentStripes">
             <img class="transparentStripes1" src="images/Stripes-White.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid darkBox">
+    <div class="row">
+      <div class="col formFlag">
+        <div class="col-12 mt-4">
+          <h1 class="text-white">Know Your flags</h1>
+        </div>
+        <img class="img-fluid img-thumbnail ml-2 my-4" src="images/flagGraphic.png"/>    
+      </div>
+      <div class="col">
+        <h1 class="formFlag mt-4">Hit us up!</h1>
+        <div class="container py-3 mb-2 text-dark text-left">
+          <div class="card">
+              <div class="card-header">
+                  <h6>Interested in planning an event with us or have feedback?</h6>
+              </div>
+              <div class="card-body">
+                  <form role="form" class="row">
+                      <div class="form-group col-6">
+                          <label class="form-control-label" for="formName">Name</label>
+                          <input type="text" class="form-control" id="formName" name="name">
+                      </div>
+                      <div class="form-group col-6">
+                          <label class="form-control-label" for="formReason">Reason</label>
+                          <select size="0" class="form-control" id="formReason" name="reason">
+                              <option>Private Full Track Event</option>
+                              <option>Birthday Parties</option>
+                              <option>General Feedback</option>
+                          </select>
+                      </div>
+                      <div class="form-group col">
+                          <label class="form-control-label" for="formEmail">Email</label>
+                          <input type="text" class="form-control" id="formEmail" name="email">
+                      </div>
+                      <div class="form-group col-lg-12">
+                          <label class="form-control-label" for="formMessage">Message</label>
+                          <textarea class="form-control" id="formMessage" name="message" rows="6"></textarea>
+                      </div>
+                      <div class="form-group col-lg-12">
+                          <button class="btn btn-warning float-right" for="form-group-input">Send</button>
+                      </div>
+                  </form>
+              </div>
           </div>
         </div>
       </div>

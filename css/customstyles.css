@@ -199,3 +199,12 @@ body {
   border: 3px dashed #fff;
   padding: 7px;
 }
+.faqHeadStyle {
+  background-color: rgba(92, 92, 92, 0.26);
+}
+
+.formFlag {
+  font-family: 'Racing Sans One', sans-serif;
+  color: #fff;
+  text-shadow: 0px 1px 4px #fff;
+}
